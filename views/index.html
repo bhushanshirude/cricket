@@ -1,0 +1,47 @@
+<!-- index.nunjucks -->
+{% extends "./base_template.html" %}
+{%import "./partials/common_macros.html" as commonMacros %}
+{% block header %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cricket | Roanuz Cricket API</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+{% endblock %}
+
+{% block content %}
+  <div class="rca-container">
+    <div class="rca-row">
+      <div class="rca-column-12">
+        <div class="rca-blog-image">
+          <h2 style="padding: 20px 0; font-weight: 300; color: #000;">
+            Data From Roanuz CricketAPI - for more details <a href="https://www.cricketapi.com/docs/" target="_blank"> Click here.</a>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="rca-row">
+      <div class="rca-column-12">
+        <!--Widget Inner -->
+        <div class="rca-menu-scroll rca-left-border">
+          <ul class="rca-season-list">
+            <li>
+              <a href="/recent-matches/">
+                Recent Matches
+              </a>
+            </li>
+            <li>
+              <a href="/schedule/">
+                Current Month Schedule
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
